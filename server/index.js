@@ -19,7 +19,8 @@ app.use(
 );
 
 const corsOptions = {
-  origin: "https://smart-complaint-management-system.vercel.app/",
+  origin: "https://smart-complaint-management-system.vercel.app",
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
