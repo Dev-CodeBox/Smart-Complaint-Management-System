@@ -18,7 +18,7 @@ const AdminDashboard = () => {
     setLoading(true);
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/v1/admin/getComplaints",
+        "https://smart-complaint-management-system.onrender.com/api/v1/admin/getComplaints",
         {
           headers: { Authorization: `Bearer ${admin_token}` },
         }
@@ -34,7 +34,7 @@ const AdminDashboard = () => {
 
   const updateStatus = async (complaintId, action) => {
     try {
-      const endpoint = `http://localhost:5000/api/v1/admin/complaint/${complaintId}/${action}`;
+      const endpoint = `https://smart-complaint-management-system.onrender.com/api/v1/admin/complaint/${complaintId}/${action}`;
       const res = await axios.patch(
         endpoint,
         {},

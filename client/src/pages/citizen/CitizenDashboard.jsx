@@ -23,7 +23,7 @@ const CitizenDashboard = () => {
   const fetchComplaints = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/v1/citizen/getComplaints",
+        "https://smart-complaint-management-system.onrender.com/api/v1/citizen/getComplaints",
         {
           headers: { Authorization: `Bearer ${citizen_token}` },
         }
@@ -43,7 +43,7 @@ const CitizenDashboard = () => {
       }
 
       const res = await axios.patch(
-        "http://localhost:5000/api/v1/citizen/upvote",
+        "https://smart-complaint-management-system.onrender.com/api/v1/citizen/upvote",
         {
           citizen: citizenId,
           complaint: complaintId,
@@ -86,7 +86,7 @@ const CitizenDashboard = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/citizen/registerComplaint",
+        "https://smart-complaint-management-system.onrender.com/api/v1/citizen/registerComplaint",
         formData,
         {
           headers: {

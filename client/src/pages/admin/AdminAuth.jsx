@@ -14,7 +14,7 @@ const AdminAuth = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/admin/login",
+        "https://smart-complaint-management-system.onrender.com/api/v1/admin/login",
         {
           email,
           password,

@@ -17,7 +17,7 @@ const ResetPassword = () => {
     setIsSubmitting(true);
     try {
       const response = await axios.patch(
-        "http://localhost:5000/api/v1/common/resetPassword",
+        "https://smart-complaint-management-system.onrender.com/api/v1/common/resetPassword",
         {
           email,
           newPassword,
