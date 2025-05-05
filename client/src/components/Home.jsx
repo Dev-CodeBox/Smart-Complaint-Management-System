@@ -17,13 +17,13 @@ export default function Home() {
 
       <div className="hero-content text-center opacity-80 text-neutral-content relative z-10">
         <div className="max-w-xl p-6 bg-base-100 bg-opacity-30 bg- rounded-2xl shadow-lg">
-          <h1 className="mb-4 text-4xl sm:text-5xl font-extrabold text-white">
+          <h1 className="mb-4 text-4xl sm:text-5xl font-extrabold dark:text-white text-black">
             Smart Complaint Management System
           </h1>
-          <p className="mb-6 text-sm sm:text-base text-white/80">
+          <p className="mb-6 text-sm sm:text-base dark:text-white text-black">
             Smart solution for smart cities
           </p>
-          <p className="mb-6 text-sm sm:text-base text-white/80">
+          <p className="mb-6 text-sm sm:text-base dark:text-white text-black">
             Click below to proceed as a citizen or an admin.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
